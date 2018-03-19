@@ -26,22 +26,43 @@
 				<div class="hotel-item">
 					<h4 class="hotel-title">Инфраструктура:</h4>
 					<ul class="hotel-list">
-						<li>Бассейн</li>
-						<li>Парковка</li>
-						<li>Wi-fi</li>
+						<li>
+							<!--name и id пока такие оставлю,позже исправлю-->
+							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Бассейн</label>
+						</li>
+						<li>
+							<input type="checkbox" name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Парковка</label>
+						</li>
+						<li>
+							<input type="checkbox" name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Wi-fi</label>
+						</li>
 					</ul>
-					<h4 >Тип жилья:</h4>
-					<ul class="type-home">
-						<li>Гостиница</li>
-						<li>Мотель</li>
-						<li>Апартаменты</li>
+				</div>
+				<div class="hotel-list">
+					<h4 class="hotel-title">Тип жилья:</h4>
+					<ul class="hotel-list">
+						<li>
+							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Гостиница</label>
+						</li>
+						<li>
+							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Мотель</label>
+						</li>
+						<li>
+							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<label for="subscribe-field">Апартаменты</label>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="hotel-price">
 				<table>
 					<tr>
-						<th>Стоимость жилья в сутки (Р):</th>
+						<th colspan="2">Стоимость жилья в сутки (Р):</th>
 					</tr>
 					<tr>
 						<td>от 0</td>
@@ -49,7 +70,7 @@
 					</tr>
 				</table>
 			</div>
-			<button>Показать</button>
+			<button class="btn-hotel-price">Показать</button>
 		</section>
 		<!--Переделал.Картинки пока что сюда не вставил-->
 		<section class="content-hotel-main">
