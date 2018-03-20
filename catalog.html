@@ -28,15 +28,15 @@
 					<ul class="hotel-list">
 						<li>
 							<!--name и id пока такие оставлю,позже исправлю-->
-							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<input type="checkbox" checked name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Бассейн</label>
 						</li>
 						<li>
-							<input type="checkbox" name="subscribe" id="subscribe-field">
+							<input type="checkbox" name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Парковка</label>
 						</li>
 						<li>
-							<input type="checkbox" name="subscribe" id="subscribe-field">
+							<input type="checkbox" name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Wi-fi</label>
 						</li>
 					</ul>
@@ -45,15 +45,15 @@
 					<h4 class="hotel-title">Тип жилья:</h4>
 					<ul class="hotel-list">
 						<li>
-							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<input type="checkbox" checked name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Гостиница</label>
 						</li>
 						<li>
-							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<input type="checkbox" checked name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Мотель</label>
 						</li>
 						<li>
-							<input type="checkbox" checked name="subscribe" id="subscribe-field">
+							<input type="checkbox" checked name="subscribe" class="visually-hidden" id="subscribe-field">
 							<label for="subscribe-field">Апартаменты</label>
 						</li>
 					</ul>
@@ -81,16 +81,18 @@
 			</div>
 			<button class="btn-hotel-price">Показать</button>
 		</section>
-		<!--Переделал.Картинки пока что сюда не вставил-->
 		<section class="content-hotel-main">
 			<div class="content-info-hotel">
 				<table>
 					<caption>Найдено: 3</caption>
 						<tr>
 							<th colspan="4">Сортировка:</th>
-							<th>По цене</th>
-							<th>По типу</th>
-							<th>По рейтингу</th>
+							<th>
+								<a href="#">По цене</a></th>
+							<th>
+								<a href="#">По типу</a></th>
+							<th>
+								<a href="#">По рейтингу</a></th>
 						</tr>
 						<tr>
 							<td>
