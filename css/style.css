@@ -23,42 +23,15 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 }
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
 .main-header {
 	margin-bottom: 60px;
 	/* Временно для сетки */
  	min-height: 474px;
  	outline: 2px solid red;
-}
-.main-header-logo img {
-	order: 2;
-	width: 140px;
-	height: 70px;
-	outline: 2px solid red;
-}
-.main-navigation-wrapper {
-	width: 100%;
-	margin-bottom: 60px;
-  
-  	/* Временно для сетки */
-  	min-height: 70px; 
-}
-table {
-	border-collapse: collapse;
-	border-top: 1px solid;
-	border-left: 1px solid;
-}
-
-td,
-th {
-	border-right: 1px solid;
-	border-bottom: 1px solid;
-	padding: 5px;
-}
-.visually-hidden {
-	visibility: hidden;
-}
-a {
-	text-decoration: none;
 }
 .main-navigation {
 	display: flex;
@@ -73,21 +46,40 @@ a {
 	outline: 2px solid red;
 	background-color: #ffffff;
 }
-.site-navigation {
-	margin: 0;
-	padding: 0;
+.main-header-logo {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	/*order: 2;*/
+	width: 140px;
+	height: 70px;
+	outline: 2px solid red;
+}
+.site-navigation-item  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	outline: 2px solid red;
 	list-style: none;
 }
-.site-navigation a {
-	display: inline-block;
-	color: #000000;
+.site-navigation-item .logo-space {
+	width: 140px;
 }
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-item a:hover,
+.site-navigation-item a:focus {
 	color: #81b3d2
 }
 
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+  
+  	/* Временно для сетки */
+  	min-height: 70px; 
+}
 .features-promo {
 	text-align: center;
 }
@@ -119,4 +111,22 @@ a {
 	margin: 0 auto;
 	background-color: #ffffff;
 	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+
+td,
+th {
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	padding: 5px;
+}
+.visually-hidden {
+	visibility: hidden;
+}
+a {
+	text-decoration: none;
 }
