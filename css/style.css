@@ -28,10 +28,10 @@ body {
 	margin: 0 auto;
 }
 .main-header {
-	margin-bottom: 60px;
+	/*margin-bottom: 60px;
 	/* Временно для сетки */
- 	min-height: 474px;
- 	outline: 2px solid red;
+ 	/*min-height: 474px;*/
+ 	/*outline: 2px solid red;*/
 }
 .main-navigation {
 	display: flex;
@@ -43,7 +43,7 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 	background-color: #ffffff;
 }
 .main-header-logo {
@@ -56,13 +56,13 @@ body {
 	/*order: 2;*/
 	width: 140px;
 	height: 70px;
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 }
 .site-navigation-item  {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 	list-style: none;
 }
 .site-navigation-item .logo-space {
@@ -80,38 +80,101 @@ body {
   	/* Временно для сетки */
   	min-height: 70px; 
 }
+.bg-header {
+	width: 1200px;
+	height: 508px;
+	margin-bottom: 60px;
+	/*outline: 3px solid black;*/
+}
 .features-promo {
+	margin-bottom: 59px;
 	text-align: center;
+}
+/* !!!!!!!!!!!!!!!!*/
+.features-one-city_main {
+	display: flex;
+	flex-direction: row-reverse;
+	/*outline: 2px dashed red;*/
 }
 .city-item_main {
 	width: 400px;
-	height: 258px;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #ffffff;
 	background-color: #81b3d2;
 	list-style: none;
+	/*outline: 3px solid black;*/
 }
+.city-item_main li {
+	text-align: center;
+	padding-right: 50px;
+	padding-top: 30px;
+}
+/*-------------------*/
 .features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	/* Временно для сетки */
+	min-height: 333px;
+  	list-style: none;
 	background-color: #ffffff;
-	list-style: none;
+	/*outline: 2px solid red;*/
+}
+.feature-item  {
+	width: 400px;
+	text-align: center;
+	margin-top: 60px;
+	/* Временно для сетки */
+	/*min-height: 330px;*/
+	/*outline: 3px solid black;*/
+}
+.features-two-city_main {
+	display: flex;
+	flex-direction: row;
+	/*outline: 2px dashed red;*/
 }
 .bridge-item_main {
 	width: 400px;
-	height: 258px;
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #ffffff;
 	background-color: #81b3d2;
 	list-style: none;
 }
+.bridge-item_main li {
+	text-align: center;
+	padding-right: 50px;
+	padding-top: 30px;
+}
 .features-sublist {
-	background-color: #eeeeee;
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	/* Временно для сетки */
+	min-height: 256px;
+  	list-style: none;
+	background-color: #f2f2f2;
+	/*outline: 2px solid red;*/
+}
+.features-sublist-item {
+	width: 400px;
+	text-align: center;
+	margin-top: 20px;
+
+	/* Временно для сетки */
+	/*min-height: 330px;*/
+	/*outline: 3px solid black;*/
 }
 .interest-hotel {
 	width: 1200px;
-	height: 292px;
-	margin: 0 auto;
+	min-height: 292px;
+	margin: 0;
 	background-color: #ffffff;
 	text-align: center;
-}
+}*/
 table {
 	border-collapse: collapse;
 	border-top: 1px solid;
