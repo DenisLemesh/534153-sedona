@@ -3,20 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+		<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo" href="#">
-				<img src="http://placehold.it/150x100" alt="Логотип отеля Седона" width="100" height="100">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="catalog.html">Гостиницы</a></li>
-			</ul>
+			<div class="main-navigation-wrapper">
+				<ul class="site-navigation-list">
+					<li class="site-navigation-item align-left"><a href="#">Информация</a></li>
+					<li class="site-navigation-item align-left"><a href="#">Фото и видео</a></li>
+					<li class="site-navigation-item logo-place">
+						<a  class="main-header-logo" href="">
+							<img src="img/logo.png" alt="Логотип отеля Седона" width="140" height="70">
+						</a>
+					</li>
+					<li class="site-navigation-item align-right"><a href="#">Карта штата</a></li>
+					<li class="site-navigation-item align-right"><a href="catalog.html">Гостиницы</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main class="hotel-main">
