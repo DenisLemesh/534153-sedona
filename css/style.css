@@ -40,6 +40,7 @@ body {
 	width: 1200px;
 	height: 56px; 
 	margin: 0 auto;
+	font-family: "PT_Sans_bold", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
@@ -48,15 +49,6 @@ body {
 }
 .main-header-logo {
 	text-align: center;
-	/*position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	width: 140px;
-	height: 70px;
-	/*outline: 2px solid red;*/
 }
 .site-navigation-list {
 	height: 56px;
@@ -65,8 +57,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	/*justify-content: space-around;
-	/*outline: 2px solid red;*/
+	/*justify-content: space-around;*/
 	list-style: none;
 }
 .site-navigation-item.logo-place {
@@ -75,12 +66,17 @@ body {
 	min-width: 140px;
 }
 .site-navigation-item {
+	font-family: "PT_Sans_bold", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
 	padding: 0 12px;
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
 	white-space: nowrap;
+
 	min-width: 130px;
+	/*outline: 2px solid red;*/
 }
 .site-navigation-item a {
 	width: 100%;
@@ -91,9 +87,15 @@ body {
 }
 .align-right {
 	text-align: right;
+	margin-right: 60px;
+	padding-right: 5px;
+	
+
 }
 .align-left {
 	text-align: left;
+	margin-left: 60px;
+	padding-left: 5px;
 }
 
 .main-navigation-wrapper {
@@ -110,8 +112,18 @@ body {
 	/*outline: 3px solid black;*/
 }
 .features-promo {
-	margin-bottom: 59px;
+	margin-bottom: 61px;
 	text-align: center;
+}
+.features-promo h2 {
+	font-family: "PT_Sans_bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+}
+.features-promo p {
+	position: relative;
+	top: 10px;
+	margin-bottom: 5px;
 }
 .features-one-city_main {
 	display: flex;
@@ -125,12 +137,17 @@ body {
 	color: #ffffff;
 	background-color: #81b3d2;
 	list-style: none;
-	/*outline: 3px solid black;*/
+	outline: 3px solid black;
+}
+.city-item_main h2 {
+	font-family: "PT_Sans_bold", Arial, sans-serif;
+	font-size: 21px;
+	line-height: 26px;
 }
 .city-item_main li {
 	text-align: center;
-	padding-right: 50px;
-	padding-top: 30px;
+	padding-right: 45px;
+	padding-top: 25px;
 }
 .features-list {
 	display: flex;
@@ -267,6 +284,11 @@ input[type="submit"] {
 }
 .footer-social {
 }
+
+
+/*catalog*/
+
+
 .bg-header-hotel {
 	width: 1200px;
 	height: 218px;
