@@ -137,17 +137,25 @@ body {
 	color: #ffffff;
 	background-color: #81b3d2;
 	list-style: none;
-	outline: 3px solid black;
+	/*outline: 3px solid black;*/
 }
 .city-item_main h2 {
 	font-family: "PT_Sans_bold", Arial, sans-serif;
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 21px;
+}
+.city-item_main p {
+	position: relative;
+	top: 5px;
+	font-family: "PT_Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 25px;
 }
 .city-item_main li {
 	text-align: center;
-	padding-right: 45px;
-	padding-top: 25px;
+	padding-right: 42px;
+	padding-top: 28px;
 }
 .features-list {
 	display: flex;
