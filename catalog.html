@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-		<header class="main-header">
+	<header class="main-header">
 		<nav class="main-navigation">
 			<div class="main-navigation-wrapper">
 				<ul class="site-navigation-list">
@@ -25,9 +25,11 @@
 		</nav>
 	</header>
 	<main class="hotel-main">
-		<section class="bg-header-hotel">
-			<img src="http://placehold.it/150x100" alt="">
-			<div class="hotel">
+		<section> 
+			<div class="bg-header-hotel container">
+				<img src="#" width="1200" height="218" alt="">
+			</div>
+			<div class="hotel-item-main container">
 				<div class="hotel-item">
 					<h4 class="hotel-title">Инфраструктура:</h4>
 					<ul class="hotel-list">
@@ -46,7 +48,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="hotel-list">
+				<div class="hotel-item">
 					<h4 class="hotel-title">Тип жилья:</h4>
 					<ul class="hotel-list">
 						<li>
@@ -63,8 +65,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="hotel-price">
+				<div class="hotel-item">
 				<table>
 					<thead>
 						<tr>
@@ -84,66 +85,141 @@
 					<input type="range" name="slider" id="hotel-slider">
 				</div>
 			</div>
-			<button class="btn-hotel-price">Показать</button>
+				<button class="btn-hotel-price">Показать</button>
+			</div>
 		</section>
-		<section class="content-hotel-main">
-			<div class="content-info-hotel">
-				<table>
-					<caption>Найдено: 3</caption>
+		<section class="content-hotel-main container">
+			<div class="content-info-amara">
+				<table class="hotels-table" width="100%">
+					<thead>
+					<tr>
+						<th>Найдено: 3</th>
+						<th colspan="2" align="left">
+							<div class="hotels-table-sorting">
+								<p>
+									<span>Сортировка:</span>
+									<a href="#">По цене</a>
+									<a href="#">По типу</a>
+									<a href="#">По рейтингу</a>
+								</p>
+							</div>
+						</th>
+						<th>Направление</th>
+					</tr>
+					</thead>
+					<tbody>
 						<tr>
-							<th colspan="4">Сортировка:</th>
-							<th>
-								<a href="#">По цене</a></th>
-							<th>
-								<a href="#">По типу</a></th>
-							<th>
-								<a href="#">По рейтингу</a></th>
-						</tr>
-						<tr>
-							<td>
-								<img src="img/info-hotel-1.jpg" alt="">
+							<td rowspan="3">
+							<img src="img/info-hotel-1.jpg" class="hotel-photo" alt="hotel-photo">
 							</td>
-							<td>Amara resort & spa</td>
-							<td>
-								<a href="#">Подробнее</a></td>
-							<td>
-								<a href="#">Забронировать</a></td>
-							<td>от 4000 Р.</td>
-							<td>Гостиница</td>
-							<td>Рейтинг: 8,5</td>
+							<td colspan="2" width="100%">
+								<p class="hotel-name">Amara resort & spa</p>
+							</td>
+						 <td>
+							<div class="hotel-stars">Звёзды</div>
+						</td>
 						</tr>
 						<tr>
 							<td>
-								<img src="img/info-hotel-2.jpg" alt="">
+								<span>Гостиница</span>
 							</td>
-							<td>Desert quail inn</td>
-							<td>
-								<a href="#">Подробнее</a></td>
-							<td>
-								<a href="#">Забронировать</a></td>
-							<td>от 3000 Р.</td>
-							<td>Мотель</td>
-							<td>Рейтинг: 8,9</td>
+							<td width="100%">
+								<span>от 4000 Р.</span>
+							</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>
-								<img src="img/info-hotel-3.jpg" alt="">
+								<a href="#">Подробнее</a>
 							</td>
-							<td>Villas at poco diablo</td>
 							<td>
-								<a href="#">Подробнее</a></td>
+								<a href="#">Забронировать</a>
+							</td>
 							<td>
-								<a href="#">Забронировать</a></td>
-							<td>от 2000 Р.</td>
-							<td>Апартаменты</td>
-							<td>Рейтинг: 9,2</td>
+								<div class="hotel-rating">Рейтинг: 8,5</div>
+							</td>
 						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content-info-desert">
+				<table class="hotels-table" width="100%">
+					<tbody>
+						<tr>
+							<td rowspan="3">
+							<img src="img/info-hotel-2.jpg" class="hotel-photo" alt="hotel-photo">
+							</td>
+							<td colspan="2" width="100%">
+								<p class="hotel-name">Desert quail inn</p>
+							</td>
+						 <td>
+							<div class="hotel-stars">Звёзды</div>
+						</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Мотель</span>
+							</td>
+							<td width="100%">
+								<span>от 3000 Р.</span>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Подробнее</a>
+							</td>
+							<td>
+								<a href="#">Забронировать</a>
+							</td>
+							<td>
+								<div class="hotel-rating">Рейтинг: 8,9</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content-info-villas">
+				<table class="hotels-table" width="100%">
+					<tbody>
+						<tr>
+							<td rowspan="3">
+							<img src="img/info-hotel-3.jpg" class="hotel-photo" alt="hotel-photo">
+							</td>
+							<td colspan="2" width="100%">
+								<p class="hotel-name">Vallas poco diablo</p>
+							</td>
+						 <td>
+							<div class="hotel-stars">Звёзды</div>
+						</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Апартаменты</span>
+							</td>
+							<td width="100%">
+								<span>от 2000 Р.</span>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#">Подробнее</a>
+							</td>
+							<td>
+								<a href="#">Забронировать</a>
+							</td>
+							<td>
+								<div class="hotel-rating">Рейтинг: 9,2</div>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<section>
+		<section class="container">
 			<h3>#visitsedona</h3>
 			<div class="footer-social"></div>
 				<a class="tw" href="#">
